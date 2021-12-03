@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="CSS/DrumKit-Style.css">
+</head>
+<body>
+
+
+<div class="keys">
+    <button type="button" id="clap" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+    </button>
+    <div id="hihat" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+    </div>
+    <div id="kick" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+    </div>
+    <div id="openhat" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+    </div>
+    <div id=boom class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+    </div>
+    <div id="ride" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+    </div>
+    <div id="snare" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+    </div>
+    <div id="tom" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+    </div>
+    <div id="tink" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    $("#clap").click(function(){
+        var clap = new Audio('audio/Drum%20Kit_sounds_clap.wav')
+        clap.play();
+    });
+
+    $("#hihat").click(function(){
+        var hihat = new Audio('audio/Drum%20Kit_sounds_hihat.wav')
+        hihat.play();
+    });
+
+    $("#kick").click(function(){
+        var kick = new Audio('audio/Drum%20Kit_sounds_kick.wav')
+        kick.play();
+    });
+
+    $("#openhat").click(function(){
+        var openhat = new Audio('audio/Drum%20Kit_sounds_openhat.wav')
+        openhat.play();
+    });
+
+    $("#boom").click(function(){
+        var boom = new Audio('audio/Drum%20Kit_sounds_boom.wav')
+        boom.play();
+    });
+
+    $("#ride").click(function(){
+        var ride = new Audio('audio/Drum%20Kit_sounds_ride.wav')
+        ride.play();
+    });
+
+    $("#snare").click(function(){
+        var snare = new Audio('audio/Drum%20Kit_sounds_snare.wav')
+        snare.play();
+    });
+
+    $("#tom").click(function(){
+        var tom = new Audio('audio/Drum%20Kit_sounds_tom.wav')
+        tom.play();
+    });
+
+    $("#tink").click(function(){
+        var tink = new Audio('audio/Drum%20Kit_sounds_tink.wav')
+        tink.play();
+    });
+})
+</script>
+
+
+</body>
+</html>

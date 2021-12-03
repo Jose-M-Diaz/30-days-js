@@ -2,25 +2,25 @@
 
 //coding challenge 1
 
-var johnMass = prompt("How many KGs does John weigh?");
-var johnHeight = prompt("How tall is John?");
-console.log('John weighs ' + johnMass + ' Kgs and is ' + johnHeight + ' m tall.');
-var markMass = prompt("How many KGs does Mark weigh?");
-var markHeight = prompt('How tall is Mark?');
-console.log('John weighs ' + markMass + ' Kgs and is ' + markHeight + ' m tall.');
-
-var johnBMI = johnMass / johnHeight ** 2;
-var jBMI = johnBMI.toFixed(2);
-var markBMI = johnMass / (markHeight * markHeight);
-var mBMI = markBMI.toFixed(2);
-
-var johnHigherBMI = johnBMI > markBMI;
-var markHigherBMI = markBMI > johnBMI;
-if (markHigherBMI) {
-    console.log('Mark\'s BMI of ' + mBMI + ' is higher than John\'s.');
-} else {
-    console.log('John\'s BMI of ' + jBMI + ' is higher than mark\'s.');
-};
+// var johnMass = prompt("How many KGs does John weigh?");
+// var johnHeight = prompt("How tall is John?");
+// console.log('John weighs ' + johnMass + ' Kgs and is ' + johnHeight + ' m tall.');
+// var markMass = prompt("How many KGs does Mark weigh?");
+// var markHeight = prompt('How tall is Mark?');
+// console.log('John weighs ' + markMass + ' Kgs and is ' + markHeight + ' m tall.');
+//
+// var johnBMI = johnMass / johnHeight ** 2;
+// var jBMI = johnBMI.toFixed(2);
+// var markBMI = johnMass / (markHeight * markHeight);
+// var mBMI = markBMI.toFixed(2);
+//
+// var johnHigherBMI = johnBMI > markBMI;
+// var markHigherBMI = markBMI > johnBMI;
+// if (markHigherBMI) {
+//     console.log('Mark\'s BMI of ' + mBMI + ' is higher than John\'s.');
+// } else {
+//     console.log('John\'s BMI of ' + jBMI + ' is higher than mark\'s.');
+// };
 
 
 //CODING CHALLENGE 2
@@ -48,3 +48,16 @@ var tip = bill >= 50 && bill <= 300
     ? tip = .15 * bill
     : tip = .20 * bill;
 console.log('The bill was $' + bill +', the tip was $' + tip + ', and the total value was $' + (bill + tip));
+
+//PART 2
+
+var data1 = [17, 21,23];
+var data2 = [12, 5, -5, 0, 4];
+var printForecast = function(arr){
+    var str = '';
+    for(let i = 0; i < arr.length; i++){
+        str = str + (arr[i] + ' degrees C in ' + (i + 1) + ' days ...  ');
+    }
+    console.log(' ... ' + str);
+};
+printForecast(data1)
